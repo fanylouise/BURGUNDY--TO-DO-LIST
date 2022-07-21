@@ -1,0 +1,26 @@
+/*
+PALETA:
+
+background:#1a1a1d;
+gray-color:#4e4e50;
+brown-wine:#6f2232;
+wine:#950740;
+strong-pink:#c3073f;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lato', 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+/* .container{
