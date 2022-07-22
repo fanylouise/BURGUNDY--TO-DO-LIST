@@ -1,6 +1,6 @@
+/*GENERAL INFORMATION*/
 /*
-PALETA:
-
+COLOR PALETTE:
 background:#1a1a1d;
 gray-color:#4e4e50;
 brown-wine:#6f2232;
@@ -22,5 +22,15 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #1a1a1d;
 }
-/* .container{
+h1{
+  display: flex;
+  color:#950740 ;
+  text-shadow: 0 0 0.2em #c3073f;
+  font-size:4em;
+}
+h1#clock{
+ color:#4e4e50 ;
+ font-size: 60px;
+}
