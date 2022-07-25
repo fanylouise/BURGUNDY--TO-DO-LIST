@@ -10,6 +10,13 @@ strong-pink:#c3073f;
 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
+:root{
+  --background:#1a1a1d;
+  --second-color-gray:#4e4e50;
+  --brown-wine:#6f2232;
+  --wine:#950740;
+  --strong-pink:#c3073f;
+}
 *{
   box-sizing: border-box;
 }
@@ -19,18 +26,103 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  background-color: #1a1a1d;
+  margin: 0; 
+  background-color: var(--background);
+  scrollbar-width:thin;
 }
-h1{
+h1.neon-style{
+  margin: 0;
   display: flex;
-  color:#950740 ;
-  text-shadow: 0 0 0.2em #c3073f;
-  font-size:4em;
+  font-size: 90px;
+  color:var(--wine) ;
+  text-shadow: 0 0 0.2em var(--strong-pink);
+  font-family: 'Lato';
+  font-weight: 500;
+
 }
 h1#clock{
- color:#4e4e50 ;
- font-size: 60px;
+ color:var(--second-color-gray) ;
+ font-size: 85px;
+ /* text-shadow: -1px -1px var(--second-color-gray), -1px -1px black; */
+}
+form{
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  align-items:center;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  background-color:var(--wine) ;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  border-style: none;
+}
+::placeholder{
+  color:rgb(205, 199, 199);
+}
+ul{
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+p{
+  text-align: center;
+  color: var(--strong-pink);
+  font-size: 30px;
+}
+li{
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  border-style: none;
+  max-width: 250px;
+  min-height: 50px;
+  overflow: auto;
+  background-color: #4e4e50;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+li.completed{
+  color: var(--brown-wine);
+  font-size: 20px;
+  border: none;
+  max-width: 250px;
+  min-height: 50px;
+  overflow: auto;
+  background-color:rgb(71, 135, 71);
+  text-align: center;
+  text-decoration: line-through;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+@media(max-width:600px){
+  h1.neon-style{
+  font-size: 70px;
+  flex-wrap: nowrap;
+  }
+  h1#clock{
+    font-size: 60px;
+  }
+  @media(max-width:390px){
+    h1.neon-style{
+    font-size: 45px;
+    flex-wrap: nowrap;
+    }
+    h1#clock{
+      font-size: 50px;
+    }
+}
 }
