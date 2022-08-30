@@ -1,0 +1,22 @@
+
+:root{
+  --background:#1a1a1d;
+  --second-color-gray:#4e4e50;
+  --brown-wine:#6f2232;
+  --wine:#950740;
+  --strong-pink:#c3073f;
+}
+.task-container{
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  border-style: none;
+  width: 100%;
+  min-height: 50px;
+  overflow: auto;
+  background-color: #4e4e50;
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px;
+  cursor: pointer;
+}

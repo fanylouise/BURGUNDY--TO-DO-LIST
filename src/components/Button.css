@@ -1,0 +1,20 @@
+:root{
+  --background:#1a1a1d;
+  --second-color-gray:#4e4e50;
+  --brown-wine:#6f2232;
+  --wine:#950740;
+  --strong-pink:#c3073f;
+}
+
+.add-button{
+  background-color:var(--wine) ;
+  padding: 0 10px;
+  border-radius: 5px;
+  height: 45px;
+  width: 25%;
+  color:#fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight:400;
+  border:none;
+}

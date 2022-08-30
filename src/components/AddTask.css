@@ -1,0 +1,30 @@
+:root{
+  --background:#1a1a1d;
+  --second-color-gray:#4e4e50;
+  --brown-wine:#6f2232;
+  --wine:#950740;
+  --strong-pink:#c3073f;
+}
+
+.add-task-container{
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.add-task-input{
+  height: 45px;
+  width:100%;
+  padding: 0 10px;
+  text-align: center;
+  background-color:#cfc3c8;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  border-radius: 5px;
+  border-style: none;
+  flex: 2;
+}
+.add-task-input::placeholder{
+  color: rgb(0, 0, 0);
+}

@@ -1,0 +1,105 @@
+/*GENERAL INFORMATION*/
+/*
+COLOR PALETTE:
+background:#1a1a1d;
+gray-color:#4e4e50;
+brown-wine:#6f2232;
+wine:#950740;
+strong-pink:#c3073f;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+:root{
+  --background:#1a1a1d;
+  --second-color-gray:#4e4e50;
+  --brown-wine:#6f2232;
+  --wine:#950740;
+  --strong-pink:#c3073f;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Lato', 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0; 
+  background-color: var(--background);
+  scrollbar-width:thin;
+}
+h1.neon-style{
+  margin: 0;
+  display: flex;
+  font-size: 100px;
+  color:var(--wine) ;
+  font-weight: 500;
+
+}
+h1#clock{
+ color:var(--second-color-gray) ;
+ font-size: 90px;
+}
+form{
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+p{
+  display: block ;
+  text-align: center;
+  color: var(--strong-pink);
+  font-size: 30px;
+}
+li.completed{
+  color: var(--brown-wine);
+  font-size: 20px;
+  border: none;
+  max-width: 250px;
+  min-height: 50px;
+  overflow: auto;
+  background-color:rgb(71, 135, 71);
+  text-align: center;
+  text-decoration: line-through;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+footer{
+  bottom: 15px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+footer p{
+  font-size: 11px;
+ 
+}
+footer p a{
+  text-decoration: none;
+}
+
+
+@media(max-width:600px){
+  h1.neon-style{
+  font-size: 70px;
+  flex-wrap: nowrap;
+  }
+  h1#clock{
+    font-size: 60px;
+  }
+  @media(max-width:390px){
+    h1.neon-style{
+    font-size: 45px;
+    flex-wrap: nowrap;
+    }
+    h1#clock{
+      font-size: 50px;
+    }
+}
+}
