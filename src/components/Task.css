@@ -7,16 +7,36 @@
   --strong-pink:#c3073f;
 }
 .task-container{
+  display: flex;
   color: #fff;
   font-size: 25px;
   border-radius: 5px;
   border-style: none;
   width: 100%;
+  max-width:600px;
+  overflow:visible;
   min-height: 50px;
   overflow: auto;
   background-color: #4e4e50;
-  text-align: center;
+  /* text-align: center; */
   margin: 15px auto;
   padding: 10px;
   cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+
 }
+.task-title{
+  cursor: pointer;
+ 
+}
+
+.remove-task-button{
+ background-color: #4e4e50;
+ border: none;
+ font-size: 1.5rem;
+ color: #f7e5ea;
+ cursor:pointer;
+ margin-left: 10px;
+}
+

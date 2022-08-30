@@ -33,6 +33,7 @@ body{
 h1.neon-style{
   margin: 0;
   display: flex;
+  text-align: center;
   font-size: 100px;
   color:var(--wine) ;
   font-weight: 500;
@@ -56,20 +57,6 @@ p{
   color: var(--strong-pink);
   font-size: 30px;
 }
-li.completed{
-  color: var(--brown-wine);
-  font-size: 20px;
-  border: none;
-  max-width: 250px;
-  min-height: 50px;
-  overflow: auto;
-  background-color:rgb(71, 135, 71);
-  text-align: center;
-  text-decoration: line-through;
-  margin: 15px;
-  padding: 10px;
-  border-radius: 5px;
-}
 footer{
   bottom: 15px;
   margin: 0;
@@ -77,11 +64,13 @@ footer{
   margin: 0 auto;
 }
 footer p{
-  font-size: 11px;
+  font-size: 13px;
  
 }
 footer p a{
   text-decoration: none;
+  color: rgb(179, 170, 170);
+  font-weight: 400;
 }
 
 
